@@ -1,0 +1,251 @@
+/* 
+Template Name: Herschel Product Landing Page
+Description: A mobile friendly product landing page for Herschel backpacks
+Author: John Carreos
+Author URI: https://johncarreos.github.io/batch11-fe-activities/
+Tags: CSS
+*/
+
+
+/* variables */
+:root{
+    --primary: #D6D5C9;
+    --secondary: #0A100D;
+    /* --secondary: #2D4739; */
+    --text-color: #F2F2F2;
+}
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+
+/* base styles */
+
+
+h3 {
+    padding-bottom: 50px;
+}
+
+h4 {
+    padding-bottom: 50px;
+}
+
+#header{
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10%;
+}
+#about-us, #videos{
+    padding: 10%;
+    background-color: var(--secondary);
+    color: var(--text-color);
+}
+
+.background-color {
+    background-color: #2D4739;
+}
+
+#change-color {
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: var(--primary);
+    cursor: pointer;
+    padding: .5em .5em;
+    border-radius: 5px;
+    margin-top: 2em;
+}
+
+#backpacks {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.video {
+    box-sizing: content-box;
+    margin: auto;
+    border: 0;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    text-align: center;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+#subscribe h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#subscribe p {
+    padding-bottom: 10px; 
+}
+
+.copyright {
+    padding-bottom: 10px;
+}
+
+.fa-instagram {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+
+}
+
+/* nav bar */
+#nav-bar ul{
+    list-style: none;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+.nav-link{
+    padding: 10px 5px;
+}
+
+#email {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+    width: 200px;
+    height: 25px;
+    border-radius: 2px;
+    border: 1px solid gray;
+}
+
+#submit {
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    color: var(--text-color);
+    background-color: var(--secondary);
+    height: 25px;
+    width: 75px;
+    cursor: pointer;
+}
+
+/* fonts */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h3{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.6em;
+}
+h4{
+    font-size: 1.1em;
+}
+.about {
+    font-size: 1.1em;
+}
+
+/* images */
+
+#logo {
+    max-width: 100%;
+}
+
+.product-img {
+    max-width: 200px;
+    border-radius: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+
+/* mobile styles */
+
+/* small tablet styles */
+@media screen and (min-width: 769px){
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #logo {
+        max-width: 50px;
+    }
+    
+    #header {
+        flex-direction: row;
+    }
+
+    .nav-link{
+        display: inline-block;
+        padding: 8px 20px;
+    }
+
+    .nav-link a{
+        transition: all 0.3s ease 0s;
+    }
+
+}
+
+/* large tablets & laptop styles */
+@media screen and (min-width: 960px){
+    body{
+        font-size: 18px;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #videos h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+}
+
+/* desktop styles */
+@media screen  and (min-width: 1200px){
+    #about-us, #backpacks{
+        height: 100vh;
+    }
+    body{
+        font-size: 20px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #videos {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+
